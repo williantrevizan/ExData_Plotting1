@@ -36,7 +36,7 @@
   lines(hpc$Time,sub3,col='blue')
   
 ## makes legend
-  legend('topright',lty='solid',col=c('black','red','blue'),legend=c('sub metering 1','sub metering 2','sub metering 3'))
+  legend('topright',lty='solid',col=c('black','red','blue'),legend=c('Sub_metering_1','Sub_metering_2','Sub_metering_3'))
   
   dev.off() # closes device
   

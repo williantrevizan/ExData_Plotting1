@@ -39,18 +39,18 @@
   lines(hpc$Time,sub1)
   lines(hpc$Time,sub2,col='red')
   lines(hpc$Time,sub3,col='blue')
-  legend('topright',lty='solid',col=c('black','red','blue'),legend=c('sub metering 1','sub metering 2','sub metering 3'))
+  legend('topright',lty='solid',col=c('black','red','blue'),legend=c('Sub_metering_1','Sub_metering_2','Sub_metering_3'))
   
   ## Voltage plot (similar idea of plot2)
   
   V<-hpc$Voltage
-  plot(hpc$Time,V,xlab="",ylab="Voltage",type='n')
+  plot(hpc$Time,V,xlab="datetime",ylab="Voltage",type='n')
   lines(hpc$Time,V)
   
 ## Global Reactive Power plot (similar idea of plot2)
   
   GRP<-hpc$Global_reactive_power
-  plot(hpc$Time,GRP,xlab="",ylab="Global Reactive Power",type='n')
+  plot(hpc$Time,GRP,xlab="datetime",ylab="Global_reactive_power",type='n')
   lines(hpc$Time,GRP)
   
   dev.off() # closes device
